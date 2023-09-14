@@ -1,6 +1,6 @@
 /*42 header*/
 
-#include<stdlib.h>
+#include<libft.h>
 
 int	ft_strlen(char *s)
 {
@@ -28,8 +28,6 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-#include<string.h>
-#include<stdio.h>
 
 int	main(void)
 {

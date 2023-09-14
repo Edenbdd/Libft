@@ -1,8 +1,6 @@
 /*42 header*/
 
-/*2 pb: no idea if I do something to make c constant like a cast or whatever + in one man, c was converted to an unsigned char but only in 1 of them so I don't know what the deal is*/
-
-#include<stddef.h>
+#include<libft.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -19,8 +17,6 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
-#include<string.h>
-#include<stdio.h>
 
 int	main(void)
 {

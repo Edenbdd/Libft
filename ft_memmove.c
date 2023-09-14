@@ -1,8 +1,6 @@
 /*42 header*/
 
-#include<string.h>
-#include<stdio.h>
-#include<stddef.h>
+#include<libft.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

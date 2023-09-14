@@ -1,4 +1,6 @@
-/*include proper 42 header*/
+/*42 header*/
+
+#include<libft.h>
 
 int	ft_strlen(char *str)
 {

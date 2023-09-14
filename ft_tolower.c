@@ -1,5 +1,7 @@
 /*42 header*/
 
+#include<libft.h>
+
 int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
@@ -7,8 +9,6 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-#include<stdio.h>
-#include<ctype.h>
 
 int	main(void)
 {

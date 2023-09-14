@@ -1,7 +1,6 @@
 /*42 header*/
 
-#include<stdio.h>
-#include<stdlib.h>
+#include<libft.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -12,7 +11,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	start = (size_t)start;
 	i = start;
 	j = 0;
-	sub = calloc((len - start + 1), sizeof(char)); /*changer avec ft_calloc*/
+	sub = ft_calloc((len - start + 1), sizeof(char));
 	if (!sub)
 		return (NULL);
 	while (s[j] && j <= len)

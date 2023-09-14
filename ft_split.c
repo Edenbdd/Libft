@@ -1,6 +1,6 @@
+/*42 header*/
 
-#include <stdlib.h>
-#include <stdio.h>
+#include<libft.h>
 
 int	check_char(char *str, char c)
 {

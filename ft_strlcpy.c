@@ -1,7 +1,6 @@
 /*42 header*/
 
-#include<stdio.h>
-#include<bsd/string.h>
+#include<libft.h>
 
 int	ft_strlen(const char *src)
 {

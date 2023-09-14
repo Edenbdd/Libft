@@ -1,7 +1,6 @@
 /*42 header*/
 
-#include<stdlib.h>
-#include<stdio.h>
+#include<libft.h>
 
 int	ft_strlen(char const *s1)
 {
@@ -33,7 +32,7 @@ char	*ft_strndup(char const *s1, int i, int len)
 	int	k;
 
 	k = 0;
-	tmp = calloc((len - i + 1), sizeof(char)); /*je dois utiliser ft_calloc quand j aurais fait le makefile ici pcq calloc c est cheat*/
+	tmp = ft_calloc((len - i + 1), sizeof(char));
 	if (!tmp)
 		return (NULL);
 	while ((i + k) < (len - i - 1))

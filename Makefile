@@ -41,7 +41,7 @@ SRC = ft_atoi.c\
       ft_tolower.c\
       ft_toupper.c\
 
-OBJS = $(SRC:.c = .o)
+OBJS = $(SRC:.c=.o)
 
 all: $(NAME)
 
@@ -49,7 +49,7 @@ $(NAME) : $(OBJS)
 	ar -rc $(NAME) $(OBJS)
 	
 %.o : $(SRC) $(HEADER)
-	$(CC) $(FLAGS) -c $(SRC) -include $(HEADER)
+	$(CC) $(FLAGS) -c $(SRC) -I .
 
 clean:
 	rm -f $(OBJS)

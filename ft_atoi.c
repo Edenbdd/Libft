@@ -1,6 +1,6 @@
 /*42 header*/
 
-#include<libft.h>
+#include"libft.h"
 
 int	ft_atoi(const char *nptr)
 {

@@ -1,7 +1,7 @@
 /*42 header*/
 
-#ifndef _LIBFT_H_
-#define _LIBFT_H_
+#ifndef _LIBFT_H
+#define _LIBFT_H
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -22,10 +22,12 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-typedef struct s_list
+typedef struct	s_list
 {
-	void	*content;
+	void		*content;
 	struct s_list	*next;
-}	t_list;
+}			t_list;
+
+t_list	*ft_lstnew(void *content);
 
 #endif

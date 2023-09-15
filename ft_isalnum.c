@@ -1,6 +1,6 @@
 /*42 header*/
 
-#include<libft.c>
+#include"libft.c"
 
 int     ft_isalphanum(int c)
 {

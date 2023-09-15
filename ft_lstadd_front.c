@@ -2,9 +2,22 @@
 
 #include"libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list  *ft_lstnew(void *content)
+{
+        t_list *head;
 
-	lst->next = &new;
+        head = malloc(sizeof(t_list) * 1);
+	if (!head)
+		return (NULL);
+        head->content = content;
+	head->next = NULL;
+        return(head);
+}
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	new->next = *lst;
+	*lst = new;
 }
 
 int	main(void)
@@ -18,7 +31,6 @@ int	main(void)
 	t_list *lst_head = ft_lstnew((void *) ptr_lst);
 	printf("%d\n", *(int *)lst_head->content);
         printf("%p\n", lst_head->next);
-
 	ft_lstadd_front(&lst_head, new_head);
 	printf("%d\n", *(int *)lst_head->content);
         printf("%p\n", lst_head->next);

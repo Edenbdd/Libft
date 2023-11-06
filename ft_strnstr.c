@@ -1,4 +1,14 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:21:09 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:21:23 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -24,6 +34,7 @@ char	*ft_strnstr(const char *s, const char *find, size_t slen)
 	return (NULL);
 }
 
+/*
 int	main(void)
 {
 	char	*s1 = "je suis Enzo suis";
@@ -33,3 +44,4 @@ int	main(void)
 	printf("%s\n", strnstr(s1, s2, 5));
 	return (0);
 }
+*/

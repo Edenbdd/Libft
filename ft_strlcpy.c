@@ -1,4 +1,14 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:18:30 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:18:44 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -26,6 +36,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (len);
 }
 
+/*
 int	main(void)
 {
 	char	dst[] = "*****";
@@ -37,3 +48,4 @@ int	main(void)
 	printf("%s\n", dst1);
 	return (0);
 }
+*/

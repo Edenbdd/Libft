@@ -1,11 +1,22 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 14:59:55 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 16:02:58 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list *ptr = NULL;
+	t_list	*ptr = NULL;
 	ptr = lst;
+
 	while (ptr->next != NULL)
 	{
 		ptr = ptr->next;
@@ -13,6 +24,7 @@ t_list	*ft_lstlast(t_list *lst)
 	return (ptr);
 }
 
+/*
 int	main(void)
 {
 	t_list *head = malloc(sizeof(t_list));
@@ -36,3 +48,4 @@ int	main(void)
 	printf("%p\n", ft_lstlast(head));
 	return (0);
 }
+*/

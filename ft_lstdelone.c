@@ -1,17 +1,27 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 14:59:26 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 16:01:30 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
-t_list  *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-        t_list *head;
+	t_list	*head;
 
-        head = malloc(sizeof(t_list) * 1);
+	head = malloc(sizeof(t_list) * 1);
 	if (!head)
 		return (NULL);
-        head->content = content;
+	head->content = content;
 	head->next = NULL;
-        return(head);
+	return (head);
 }
 
 void	*del(void *lst)
@@ -25,6 +35,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	free(lst);
 }
 
+/*
 int	main(void)
 {
 	int	*ptr = malloc(sizeof(int));
@@ -40,3 +51,4 @@ int	main(void)
 	printf("%p\n", head->next);
 	return (0);
 }
+*/

@@ -1,5 +1,14 @@
-/*42 header*/
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:21:52 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:22:10 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -27,7 +36,7 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
-
+/*
 int	main(void)
 {
 	char	*s1 = "je m'appelle Enzo";
@@ -36,3 +45,4 @@ int	main(void)
 	printf("%s\n", strrchr(s1, 128));
 	return (0);
 }
+*/

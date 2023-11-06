@@ -1,4 +1,14 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:19:31 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:20:05 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -38,6 +48,7 @@ char    plus1(unsigned int i, char c)
         return (c);
 }
 
+/*
 int	main(void)
 {
 	char	(*ptrf)(unsigned int, char);
@@ -46,3 +57,4 @@ int	main(void)
 	printf("%s\n", ft_strmapi("je m'appelle Enzo", ptrf));
 	return (0);
 }
+*/

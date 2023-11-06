@@ -1,4 +1,14 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:17:01 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:17:15 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -20,6 +30,7 @@ void	maj(unsigned int i, char *str)
 	str[i] ++;
 }
 
+/*
 int	main(void)
 {
 	void	(*ptrf)(unsigned int, char *);
@@ -30,3 +41,4 @@ int	main(void)
 	printf("%s\n", string1);
 	return (0);
 }
+*/

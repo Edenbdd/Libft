@@ -1,4 +1,14 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:22:21 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:22:42 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -43,6 +53,7 @@ char	*ft_strndup(char const *s1, int i, int len)
 	tmp[k] = '\0';
 	return (tmp);
 }
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int	i;
@@ -59,8 +70,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (copy);
 }
 
+/*
 int	main(int argc, char **argv)
 {
 	printf("%s\n", ft_strtrim("ababaaaMy name is Simonbbaaabba", "ab"));
 	return (0);
 }
+*/

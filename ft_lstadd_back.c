@@ -1,32 +1,42 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 14:58:15 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:56:27 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
-t_list  *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-        t_list *head;
+	t_list	*head;
 
-        head = malloc(sizeof(t_list) * 1);
+	head = malloc(sizeof(t_list) * 1);
 	if (!head)
 		return (NULL);
-        head->content = content;
+	head->content = content;
 	head->next = NULL;
-        return(head);
+	return (head);
 }
-
 
 t_list	*ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*ptr;
 	ptr = lst;
-	while (ptr->next !=NULL)
+
+	while (ptr->next != NULL)
 	{
 		ptr = ptr->next;
 	}
 	ptr = new;
-	return (ptr);	
+	return (ptr);
 }
-
+/*
 int	main(void)
 {
 	int	*ptr = malloc(sizeof(int));
@@ -48,3 +58,4 @@ int	main(void)
 
 	return (0);
 }
+*/

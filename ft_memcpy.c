@@ -1,4 +1,14 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:06:18 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:06:36 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -19,6 +29,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
+/*
 int	main(void)
 {
 	char	dest[100];
@@ -27,3 +38,4 @@ int	main(void)
 	printf("%p\n", ft_memcpy(dest, "A", 100));	
 	return (0);
 }
+*/

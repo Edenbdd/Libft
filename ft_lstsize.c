@@ -1,25 +1,35 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:02:26 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 16:10:29 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
-t_list  *ft_lstnew(void *content)
+t_list	*ft_lstnew(void	*content)
 {
-        t_list *head;
+	t_list	head;
 
-        head = malloc(sizeof(t_list) * 1);
+	head = malloc(sizeof(t_list) * 1);
 	if (!head)
 		return (NULL);
-        head->content = content;
+	head->content = content;
 	head->next = NULL;
-        return(head);
+	return (head);
 }
 
 int	ft_lstsize(t_list *lst)
 {
 	int	count;
+	t_list	*ptr;
 
 	count = 0;
-	t_list *ptr = NULL;
 	ptr = lst;
 	while (ptr != NULL)
 	{
@@ -29,7 +39,7 @@ int	ft_lstsize(t_list *lst)
 	return (count);
 }
 
-
+/*
 int	main(void)
 {
 	int	*ptr = malloc(sizeof(int));
@@ -42,3 +52,4 @@ int	main(void)
 
 	return (0);
 }
+*/

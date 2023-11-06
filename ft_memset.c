@@ -1,6 +1,17 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:08:33 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:08:46 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include"libft.h"
+//include"libft.h"
+#include <stddef.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -17,7 +28,8 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
-
+#include <stdio.h>
+#include <string.h>
 int	main(void)
 {
 	char	s1[] = "je m'appelle Enzo";
@@ -29,3 +41,4 @@ int	main(void)
 	printf("%s\n", s2);
 	return (0);
 }
+

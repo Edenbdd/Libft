@@ -1,4 +1,14 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:16:30 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:16:44 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -30,6 +40,7 @@ char	*ft_strdup(const char *s)
 	return (tmp);
 }
 
+/*
 int	main(int argc, char **argv)
 {
 	(void)argc;
@@ -37,3 +48,4 @@ int	main(int argc, char **argv)
 	printf("%s\n", strdup(argv[1]));
 	return (0);
 }
+*/

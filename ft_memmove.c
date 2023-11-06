@@ -1,4 +1,14 @@
-/*42 header*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aubertra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/06 15:07:34 by aubertra          #+#    #+#             */
+/*   Updated: 2023/11/06 15:07:57 by aubertra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -32,6 +42,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
+/*
 int	main(void)
 {
 	char	*src = "je suis Enzo";
@@ -43,3 +54,4 @@ int	main(void)
 	printf("%s\n", (char *)memmove(dest1, src, n));
 	return (0);
 }
+*/
